@@ -1,0 +1,11 @@
+<div class="sidebar-view-subsection">
+    <div style="color: black; font-weight: bold">Browse Subsections</div>
+    <hr />
+    <span *ngFor="let subsection of subsections">
+        <span class="subsection-text"><a href="/view-subsection/{{subsection.id}}">{{subsection.name}}</a></span>
+        <hr />
+    </span>
+    <div style="text-align: center" *ngIf="displayViewAll">
+        <a style="font-weight: bold" routerLink="/list-subsections">View All</a>
+    </div>
+</div>
